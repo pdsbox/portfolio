@@ -1,0 +1,427 @@
+@charset "utf-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+@import "layout.css";
+
+
+
+/*전체 영역*/
+a{text-decoration:none;}
+a:link,a:visited,a:hover,a:active{color:#333;}
+img{vertical-align:top;}
+
+.inner_box_head{
+	width:260px;
+	height:30px;
+	margin:0 auto 10px;
+	border-bottom:2px solid orange;
+	box-sizing:border-box;
+}
+
+
+.inner_sbox,
+.inner_mbox,
+.inner_lbox,
+#contents>div:nth-of-type(1){
+	padding:10px;
+	box-sizing:border-box;
+	border-bottom:3px solid rgba(0,0,0,0.3);
+	border-right:3px solid rgba(0,0,0,0.3);
+	border-top:2px solid rgba(0,0,0,0.15);
+	border-left:2px solid rgba(0,0,0,0.15);
+}
+#contents>div:nth-of-type(1){
+	padding:0;
+}
+.inner_sbox,
+.inner_mbox,
+.inner_lbox,
+#contents>div:nth-of-type(1),
+#contents>div:nth-of-type(3),
+#contents>div:nth-of-type(5){
+	background:#daf5e4;
+}
+
+.inner_box_head>h2{
+	font-weight:bold;
+	font-size:1.35rem;
+}
+h6{
+	display:none;
+}
+
+.flex{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content: space-between;
+}
+
+#writter_say,
+#today_writter,
+#family_site,
+#location,
+#info{
+	height:175px;
+}
+#notice,
+#given,
+#quick_menu{
+	height:435px;
+}
+
+
+/*유틸 영역*/
+#utilwrap{
+	font-size:0.8rem;
+	font-weight:bold;
+}
+
+
+/*gnb 영역*/
+#gnb>#logo{
+	width:259px;
+	height:100%;
+}
+#gnb>#logo>a{
+	display:block;
+	width:259px;
+	height:100%;
+	background:url('../images/logo.png') no-repeat center/135px;
+	text-indent:-9999px;
+}
+#gnb>ul{
+	font-weight:bold;
+}
+
+
+/*BOX01*/
+/*비주얼 영역*/
+#box01{
+	width:610px;
+	height:500px;
+	position:relative;
+}
+#box01>#visual{
+	width:100%;
+	height:100%;
+}
+#visual img{
+	width:100%;
+}
+#visual>li:nth-child(2),
+#visual>li:nth-child(3){
+	position:absolute;
+	width:40px;
+	height:40px;
+	border-radius:999px;
+	border:1px solid #fff;
+	box-sizing:border-box;
+	z-index:999;
+	top:50%;
+	transform:translateY(-50%);
+	text-align:center;
+	margin:0 10px;
+}
+#visual>li:nth-child(3){
+	right:0;
+}
+#visual>li:nth-child(2) a,
+#visual>li:nth-child(3) a{
+	display:block;
+	width:100%;
+	height:100%;
+	color:#fff;
+	font-size:30px;
+	line-height:35px;
+}
+
+
+/*BOX02*/
+/*작가의말*/
+#writter_say{
+	height:175px;
+}
+#writter_say>div{
+	width:48%;
+	height:100%;
+}
+#writter_say>div:nth-of-type(1)>h3{
+	text-align:center;
+	font-weight:bold;
+	margin-bottom:10px;
+	font-size:1.1rem;
+}
+#writter_say>div:nth-of-type(1)>p{
+	text-align:left;
+	line-height:1.25;
+}
+
+#writter_say>div>a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+#writter_say img{
+	width:100%;
+	height:175px;
+}
+
+/*오늘의작가*/
+#today_writter{
+	height:175px;
+}
+#today_writter>figure{
+	width:48%;
+	height:100%;
+}
+#today_writter>figure>a{
+	display:block;
+	width:100%;
+	height:85%;
+}
+#today_writter>figure>a>img{
+	width:100%;
+	height:100%;
+}
+#today_writter>figure figcaption{
+	text-align:center;
+	margin-top:10px;
+	font-weight:bold;
+}
+
+
+/*BOX03*/
+/*공지사항*/
+#notice{
+	height:435px;
+}
+#notice>.flex{
+	width:100%;
+	height:14%;
+	padding-bottom:10px;
+	margin-bottom:10px;
+	box-sizing:border-box;
+	border-bottom:2px solid #fff;
+}
+#notice .notice_text{
+	line-height:1.5;
+}
+#notice .notice_text>h4{
+	font-weight:bold;
+}
+#notice .notice_text>p{
+	font-size:0.9rem;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+#notice .notice_overflow{
+	width:58%;
+	height:100%;
+}
+#notice .notice_images{
+	width:38%;
+	height:100%;
+}
+
+#notice .notice_images img{
+	height:100%;
+	width:90%;
+}
+#notice .no_image{
+	display:none;
+}
+
+
+/*BOX04/
+/*기증품*/
+#given>.flex{
+	height:31%;
+	margin-bottom:2.5%;
+	padding-bottom:2.5%;
+	border-bottom:2px solid #fff;
+}
+#given>.flex:last-child{
+	margin-bottom:0;
+	border:0;
+}
+#given>.flex>li:nth-child(1){
+	width:48%;
+	height:100%;
+}
+#given>.flex>li:nth-child(2){
+	width:45%;
+	height:100%;
+}
+
+#given>.flex>li>a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+#given>.flex>li>a>img{
+	display:block;
+	width:100%;
+	height:100%;
+}
+#given>.flex>li{
+	text-align:center;
+}
+#given>.flex>li>h4{
+	padding-top:25px;
+	font-weight:bold;
+	font-size:1.2rem;
+}
+
+/*제휴사이트*/
+#family_site>a,
+#family_site img{
+	display:block;
+	width:100%;
+	height:100%;
+}
+#family_site figcaption{
+	display:none;
+}
+
+
+/*BOX05*/
+/*소문예지*/
+.inner_lbox>ul{
+	height:43%;
+	width:100%;
+	margin-bottom:15%;
+	text-align:center;
+}
+.inner_lbox>ul:nth-of-type(1){
+	margin-top:3%;
+}
+.inner_lbox>ul:last-child{
+	margin-bottom:0;
+}
+.inner_lbox>ul>li:nth-of-type(1){
+	font-weight:bold;
+	margin-bottom:10px;
+	font-size:1.3rem;
+	color:#333;
+}
+.inner_lbox>ul>li:nth-of-type(2),
+.inner_lbox>ul>li:nth-of-type(2)>a,
+.inner_lbox>ul img{
+	display:block;
+	width:100%;
+	height:310px;
+}
+
+
+/*BOX06*/
+/*소장자료*/
+.have_book {
+	height:180px;
+}
+.have_book>li{
+	width:48%;
+}
+.have_book>li>a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+.have_book>li>a>img{
+	width:100%;
+}
+.have_book>li>h4{
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+
+/*오시는길*/
+#location>a,
+#location>a>img{
+	width:100%;
+	height:100%;
+	display:block;
+}
+#location>figcaption{
+	display:none;
+}
+
+
+
+/*BOX07*/
+/*자주찾는서비스*/
+#quick_menu>ul{
+	height:10%;
+	padding:3.5% 0 0;
+	align-items: center;
+	border-bottom:1px solid #fff;
+}
+#quick_menu>ul:first-of-type{
+	padding:0;
+}
+#quick_menu>ul>li:first-of-type{
+	width:80%;
+}
+#quick_menu>ul>li>h4{
+	font-weight:bold;
+	padding-left:25px;
+	box-sizing:border-box;
+}
+#quick_menu>ul>li:last-of-type{
+	padding-right:15px;
+	box-sizing:border-box;
+}
+#quick_menu>ul>li:last-of-type>a{
+	display:block;
+	width:24px;
+	height:24px;
+	line-height:20px;
+	text-align:center;
+	border:1px solid #fff;
+	box-sizing:border-box;
+	border-radius:100%;
+}
+
+
+/*이용안내*/
+#info>ul{
+	height:20%;
+}
+#info>ul:first-of-type{
+	margin-top:20px;
+}
+#info>ul:nth-of-type(2){
+	margin-bottom:15px;
+}
+#info>ul>li:first-of-type{
+	font-weight:bold;
+}
+#info>ul>li:last-of-type{
+	text-align:right;
+}
+
+
+
+
+
+/*푸터*/
+footer{
+	background:#adddb7;
+}
+footer.flex{
+	width:100%;
+	height:150px;
+	align-items: center;
+	justify-content: center;
+}
+footer>h5{
+	width:20%;
+	height:100%;
+	background:url('../images/logo.png') no-repeat center/ 150px;
+	text-indent:-9999px;
+	margin:0 2%;
+}
+footer>address{
+	width:50%;
+	line-height:1.5;
+}

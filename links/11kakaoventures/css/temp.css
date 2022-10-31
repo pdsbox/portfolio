@@ -1,0 +1,143 @@
+@charset "utf-8";
+@import "layout.css";
+
+
+/*헤더 영역*/
+header{
+    background:#fff;
+    padding:0 20px;
+}
+header>.wrap{
+    width:100%;
+}
+
+
+#logo>a{
+    background-image:url('../images/logo2.png');
+}
+
+#gnb{width:30%; margin-left:30%;}
+#gnb a {color:#333;}
+
+header h2 a{
+    background-image:url('../images/glass2.png');
+}
+
+
+/*비주얼 영역*/
+#investment{
+    height:290px;
+}
+#investment>.tgroup{
+    margin:0;
+    height:100%;
+    background:url('../images/submain.jpg') no-repeat bottom/cover;
+    color:#fff;
+    padding-top:70px;
+    box-sizing:border-box;
+}
+#investment>.tgroup>h3:last-child{
+    line-height:1.6;
+}
+
+
+/*question 영역*/
+#question{
+    margin:60px 0 100px;
+}
+#question>.wrap>h3{
+    height:150px;
+    text-align:center;
+    margin-bottom:80px;
+}
+#question>.wrap a{
+    display:block;
+    width:100%;
+    height:100%;
+    background:url('../images/intro.png') no-repeat center;
+}
+
+#question ul{
+    text-align:center;
+    color:#999;
+}
+#question ul>li>h3{
+    font-weight:600;
+    font-size:1.5rem;
+    color:#666;
+}
+#question ul>li:nth-child(2){
+    margin-top:30px;
+    line-height:1.3;
+}
+
+#question ul>li:nth-child(3){
+    margin:30px 0;
+}
+#question ul>li:nth-child(3)>span{
+    display:block;
+    height:1px;
+    background:#c0c0c0;
+    margin:0 auto;
+}
+#question ul:nth-of-type(1)>li:nth-child(3)>span{
+    width:40%;
+}
+#question ul:nth-of-type(2)>li:nth-child(3)>span{
+    width:30%;
+}
+#question ul:nth-of-type(3)>li:nth-child(3)>span{
+    width:35%;
+}
+
+
+/*chart 영역*/
+#chart{
+    margin:80px 0;
+}
+#chart .flex>li{
+    height:250px;
+    background:orange;
+    margin-bottom:20px;
+    position:relative;
+}
+#chart .flex>li>a{
+    display:block;
+    width:100%;
+    height:100%;
+    color:#fff;
+    text-align:center;
+}
+
+#chart .flex>li:nth-child(1),
+#chart .flex>li:nth-child(5){
+    width:66%;
+}
+#chart .flex>li:nth-child(2),
+#chart .flex>li:nth-child(6){
+    width:33%;
+}
+#chart .flex>li:nth-child(3){
+    width:24%;
+}
+#chart .flex>li:nth-child(4){
+    width:75%;
+}
+
+#chart a p{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:2rem;
+    font-weight:500;
+    line-height:2;
+}
+#chart a span{
+    display:block;
+    font-size:1.2rem;
+    font-weight:400;
+}
+#chart .flex>li:nth-child(3)>a>p>span{
+    display:none;
+}

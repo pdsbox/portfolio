@@ -1,0 +1,155 @@
+@charset "utf-8";
+@media all and (min-width:1025px) {
+    #switchline{
+        display:none;
+    }
+	.wrap{  /*중앙정렬*/
+        width:75%;
+        margin:0 auto;
+    }
+    .header{    /*헤더에만 적용*/
+        position:absolute;
+        /*position값이 fixed인 경우
+        gnb를 상단에 고정시켜 사용할 수 있다.
+        스크롤이 내려가도 지정한 위치에 항시 gnb가 보임.
+        */
+        top:0; left:12.5%;  
+        /*wrap의 width가 75%라서 양쪽여백 12.5%씩 계산되기 때문.*/
+        z-index:9999;
+    }
+    #menu{display:none;}
+    .header>nav,#gnb,#util{height:80px;}
+
+    /*PC Ver flex세팅 */
+    #gnb,
+    #util,
+    #bestProduct>ul,
+    #snsArea>div,
+    #snsArea>div>ul,
+    #lineBanner,
+    #mdPick>div,
+    #mdPick>div>ul,
+    #picCircle{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .header>nav{
+        display:flex;
+        justify-content:space-around;
+    }
+    #gnb{display:flex !important; justify-content:space-around;width:80%;}
+    /*mobile에서는 flex가 아니고 세로로 배치해야 하기 때문에 pc에서는 가로로 보이게 하려고 important 적용*/
+    #gnb>li{width:11%; line-height:80px; text-align:center; margin:0 30px; position:relative;}
+    #gnb>li>a, .sub>li>a{
+        display:block   !important;
+    }
+    #gnb>li>a{
+        height:30px;
+        line-height:30px;
+    }
+    #gnb>li>a::after{
+        content:'';
+        width:0px; height:0;
+        transition:all .3s;
+    }
+    #gnb>li:hover>a::after{
+        content:'';
+        width:40%;
+        height:2px;
+        background:cadetblue;
+        position:absolute;
+        left:50%;
+        bottom:0;
+        transform:translateX(-50%);
+    }
+    .sub{
+        position:absolute;
+        width:100%;
+        top:45px;
+        left:50%;
+        transform:translateX(-50%);
+        background-color:rgba(255,255,255,0.7);
+        padding:0 15px;
+        display:none;
+        text-align:center;
+    }
+    .sub>li{margin:15px 0; height:30px; line-height:30px;}
+    .sub>li:hover>a{
+        border-bottom:2px solid cadetblue;
+    }
+
+    /*PC Ver sns 영역*/
+    #snsArea{
+        padding:50px 0 50px;
+        text-align:center;
+    }
+    #snsArea>div{justify-content:space-around; margin-top:40px;}
+    .desc{width:40%;}
+    #snsArea>div>ul>li:nth-child(2){margin:0 80px;}
+    #snsArea>div>ul>li img{width:80px;}
+    #snsArea>div>ul>li h3{margin:10px 0;}
+    #snsArea>div>ul{margin-top:40px;}
+
+
+    /*PC Ver md픽*/
+    #mdPick>div{
+        justify-content:space-around;
+        align-items: flex-start;
+        padding-top:60px;
+    }
+    #mdPick{padding:50px 0;}
+    #mdPick>div>div{
+        width:40%;
+        border-right: 1px solid #333;
+        padding-right:3%;
+    }
+    #mdPick>div>ul{
+        width:50%;
+        height:100%;
+    }
+    #mdPick>div>ul>li{width:32%; overflow:hidden;}
+    #mdPick>div>ul>li img{width:100%;}
+
+
+    /* PC Ver 둥근 이미지*/
+    #picCircle{
+        padding:80px 10%;
+        justify-content: space-around;
+    }
+    #picCircle>div{
+        width:20%;
+    }
+    #picCircle>div>a{
+        display:block;
+        position:relative;
+        height:300px;
+    }
+    #picCircle>div>a>div{
+        position:absolute;
+    }
+    #picCircle>div>a>div.circle_img{
+        transform:translate(-50%,-50%) !important;
+    }
+    #picCircle>div>a>div.circle_txt{
+        background:beige;
+        padding:20% 5% 5% 5%;
+        width:80%;
+        max-height:370px;
+        overflow:hidden;
+    }
+    #picCircle>div>a>div.circle_txt>h4{
+        font-size:1.8rem;
+        font-weight:bold;
+        margin:40px 0;
+    }
+    #picCircle>div>a>div.circle_txt>p{
+        font-size:0.9rem; line-height: 2;
+    }
+    #picCircle>div:nth-child(2)>a>div.circle_txt{
+        padding:5% 5% 20% 5%;
+        top:-30%;
+    }
+
+
+}

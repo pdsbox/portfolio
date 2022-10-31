@@ -1,0 +1,278 @@
+@charset "utf-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+/*
+font-family: 'Nanum Gothic', sans-serif;
+*/
+
+img{vertical-align:top;}
+a{text-decoration:none;}
+a:link,a:visited,a:hover,a:active{color:#333;}
+
+html{
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight:400;
+	font-size:14px;
+	color:#333;
+}
+
+.wrap{
+	margin:0 auto;
+	width:1100px;
+}
+
+.clear::after{
+	content:'';
+	width:0; height:0;
+	display:block;
+	clear:both;
+	visibility:hidden;
+}
+
+.content_line{
+	border:0;
+	height:2px;
+	background:#333;
+	margin-bottom:30px;
+}
+.bold_line{
+	width:60px;
+	border:0;
+	height:7px;
+	background:#333;
+	margin:20px 0;
+}
+
+
+
+
+/*헤더*/
+header{
+	height:120px;
+	text-align:center;
+	font-weight:800;
+}
+header>.wrap{
+	position:relative;
+	height:100%;
+}
+header>.wrap>h1{
+	height:60px;
+	padding-top:20px;
+	box-sizing:border-box;
+}
+header>.wrap>h1>a{
+	display:block;
+}
+header>.wrap>ul{
+	width:1100px;
+	height:30px;
+	line-height:30px;
+	position:absolute;
+	bottom:10%;
+	transform:translateX(-50%);
+	left:50%;
+}
+header>.wrap>ul>li{
+	float:left;
+	margin:0 24px;
+}
+header>.wrap>ul>li:hover>a{
+	color:#c93;
+}
+header>.wrap>ul>li>a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+
+
+/*비주얼*/
+#visual{
+	width:100%;
+	height:561px;
+	border-bottom:1px solid #C93;
+	background:url('../images/mainimg.jpg') no-repeat center;
+	position:relative;
+	margin:0 auto;
+}
+#visual>ul{
+	height:100%;
+	position:absolute;
+	right:30%;
+}
+#visual>ul>li{
+	padding-top:40px;
+}
+#visual>ul>li>a,
+#visual>ul>li>a>img{
+	display:block;
+	margin:0 auto;
+}
+
+
+
+/*컨텐츠 상단*/
+#brand_story{
+	margin:70px 0;
+}
+
+#brand_story>.wrap>ul>li{
+	float:left;
+	width:250px;
+	margin-right:20px;
+}
+#brand_story>.wrap>ul>li img{
+	height:100%;
+}
+#brand_story>.wrap>ul>li:nth-of-type(3){
+	width:560px;
+	margin-right:0;
+}
+
+#brand_story>.wrap>ul>li:nth-of-type(3)>ul>li{
+	float:left;
+	width:302px;
+	margin-right:20px;
+}
+#brand_story>.wrap>ul>li:nth-of-type(3)>ul>li:nth-of-type(2){
+	width:238px;
+	margin-right:0;
+}
+#brand_story>.wrap>ul>li:nth-of-type(3)>ul>li:nth-of-type(2) img{
+	width:238px;
+}
+
+#brand_story>.wrap li>h2>a{
+	display:block;
+	font-weight:800;
+	font-size:1.1rem;
+	margin:30px 0;
+}
+#brand_story>.wrap li>p>a{
+	display:block;
+	font-size:0.9rem;
+	line-height:1.4;
+	letter-spacing:0.3px;
+}
+#brand_story>.wrap li>h3>a{
+	display:block;
+	font-weight:700;
+	font-size:0.8rem;
+	margin:20px 0;
+}
+
+
+
+/*컨텐츠 하단*/
+#event{
+	margin-bottom:70px;
+}
+#event>.wrap>ul>li{
+	float:left;
+	width:250px;
+	margin-right:20px;
+}
+
+
+#event>.wrap li>h2>a{
+	display:block;
+	font-weight:800;
+	font-size:1.1rem;
+	margin:30px 0;
+}
+#event>.wrap li>p>a{
+	display:block;
+	font-size:0.9rem;
+	line-height:1.4;
+	letter-spacing:0.3px;
+}
+#event>.wrap li:nth-of-type(1){
+	position:relative;
+	width:250px;
+	height:259px;
+}
+#event>.wrap li:nth-of-type(1)>h3>a{
+	display:block;
+	font-weight:800;
+	font-size:0.8rem;
+	position:absolute;
+	bottom:0;
+}
+
+
+
+/*하부 메뉴*/
+#bottom_menu_line>.wrap>h4>a{
+	display:block;
+	text-align:center;
+}
+#bottom_menu_line>.wrap>.bold_line{
+	width:100%;
+	margin:0;
+}
+
+
+
+/*푸터*/
+footer{
+	margin-top:30px;
+	height:120px;
+}
+footer>div.wrap{
+	height:100%;
+}
+footer>div>address,
+footer>div>#footermenu{
+	width:50%;
+	height:100%;
+}
+footer>div>address{
+	text-align:left;
+	font-size:0.8rem;
+	line-height:1.4;
+}
+
+#font_character{
+	color:yellowgreen;
+	font-size:0.9rem;
+	line-height:1.4;
+	letter-spacing:0.3px;
+}
+#copyright{
+	color:#999;
+	letter-spacing: 2px;
+	font-weight:bold;
+	font-size:0.7rem;
+}
+.flex{
+	display:flex;
+	justify-content:space-around;
+	align-items: center;
+}
+#footermenu{
+	background:url('../images/wa.png') no-repeat top left/59px 84px;
+}
+#footermenu>ul{
+	padding-left:70px;
+	margin-bottom:15px;
+}
+#footermenu>ul{
+	justify-content:space-between;
+}
+#footermenu>ul:first-of-type{
+	font-size:0.9rem;
+	font-weight:bold;
+}
+#footermenu>ul:last-of-type>li{
+	margin-right:10px;
+	width:92px;
+}
+#footermenu>ul:last-of-type>form{
+	margin-left:16px;
+	width:330px;
+	text-align:right;
+}

@@ -1,0 +1,239 @@
+@charset "utf-8";
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:14px;
+    font-weight:300;
+    color:#333;
+}
+a{text-decoration:none;}
+a:link,a:visited,a:hover,a:active{color:#333;}
+img{vertical-align: top;}
+
+
+
+
+/*공통*/
+.wrap{
+    width:1280px;
+    margin:0 auto;
+}
+.flex{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-flow:row wrap;
+}
+
+section>h2{
+    display:none;
+}
+
+/*검색레이어*/
+#searchbar{
+    background:rgba(0,0,0,0.7);
+    position:absolute;
+    width:100%;
+    height:220px;
+    z-index:999;
+    top:-1000%;
+    left:0;
+    transition:all .2s;
+    display:none;
+}
+#searchbar>h3{
+    height:40px;
+    padding:20px 0;
+    text-align:right;
+}
+#searchbar>h3>a{
+    display:block;
+    margin-left:98%;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    text-align:right;
+    box-sizing:border-box;
+}
+#searchbar>h3>a>img{
+    width:30px;
+    height:30px;
+    vertical-align:middle;
+}
+#searchbar>div{
+    margin-top:30px;
+    text-align:center;
+}
+#searchbar>div>img{
+    cursor:pointer;
+    height:24px;
+    line-height:24px;
+    vertical-align:bottom;
+}
+#searchbar>div>input{
+    background-color:rgba(0,0,0,0);
+    border:0;
+    border-bottom:1px solid #d0d0d0;
+    color:#fff;
+    margin-right:15px;
+    width:300px;
+}
+#searchbar>div>input::placeholder{
+    color:#d0d0d0;
+}
+
+
+
+/*헤더*/
+nav{
+    border-bottom:2px solid #b3a686;
+    box-sizing: border-box;
+}
+#util{
+    width:100%;
+    height:35px;
+    position:relative;
+    background:#999;
+}
+#util>ul{
+    justify-content:right;
+}
+#util>ul>li{
+    margin-left:60px;
+    height:35px;
+    line-height:35px;
+}
+#util>ul>li>a{
+    color:#fff;
+}
+#util>ul>li>a>img{
+    height:20px;
+    vertical-align: middle;
+}
+#gnb>ul{
+    width:100%;
+    justify-content: center;
+}
+#gnb>ul>li{
+    height:70px;
+    line-height:70px;
+    margin:0 1.5%;
+    width:13%;
+    text-align:center;
+    cursor:pointer;
+}
+#gnb>ul>li>a{
+    font-weight:500;
+    color:#918b8d;
+}
+#gnb>ul>li:hover>a{
+    border-bottom:2px solid #918b8d;
+}
+#logo{
+    text-indent:-9999px;
+    background:url('../images/logo.png') no-repeat center/50%;
+    cursor:pointer;
+}
+#logo>a{
+    display:block;
+    width:100%; height:100%;
+}
+.sub_gnb{
+    width:100%;
+    z-index:99;
+    display:none;
+}
+.sub_gnb>li{
+    z-index:99;
+    width:100%; height:60px;
+    line-height:60px;
+    background:#fff;
+    border-left:2px solid #b3a686;
+    border-right:2px solid #b3a686;
+    box-sizing:border-box;
+}
+.sub_gnb>li>a{
+    font-weight:500;
+    color:#918b8d;
+}
+.sub_gnb>li:first-child{
+    border-top:2px solid #b3a686;
+}
+.sub_gnb>li:last-child{
+    border-bottom:2px solid #b3a686;
+}
+
+.sub_gnb>li:hover>a{
+    border-bottom:2px solid #918b8d;
+}
+#gnb>ul>li:hover>.sub_gnb{
+    display:flex;
+}
+
+
+/*도트라인*/
+#dotted{
+    height:10px;
+    background:url('../images/line.png') repeat-x center;
+    margin:50px auto 100px;
+}
+
+
+
+/*푸터*/
+footer{
+    background:#999;
+    color:#fff;
+    height:300px;
+    width:100%;
+}
+footer a:link, a:visited, a:hover, a:active{
+    color:#fff;
+}
+footer>.flex{
+    padding:20px 0;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+footer>div>ul{
+    height:200px;
+
+}
+footer>div>ul>li{
+    margin:20px 0;
+    height:20px;
+    line-height:20px;
+}
+
+footer>div>ul:nth-of-type(3)>li{
+    margin:20px 0;
+    height:20px;
+    line-height:20px;
+}
+footer>div>ul:nth-of-type(3)>li:nth-of-type(2){
+    background:url('../images/sns.png') repeat-y 0 0/auto;
+    padding-left:30px;
+    cursor:pointer;
+}
+footer>div>ul:nth-of-type(3)>li:nth-of-type(3){
+    background:url('../images/sns.png') repeat-y 0 20px/auto;
+    padding-left:30px;
+    cursor:pointer;
+}
+footer>div>ul:nth-of-type(3)>li:nth-of-type(4){
+    background:url('../images/sns.png') repeat-y 0 40px/auto;
+    padding-left:30px;
+    cursor:pointer;
+}
+footer>div>ul:nth-of-type(3)>li:nth-of-type(5){
+    background:url('../images/sns.png') repeat-y 0 60px/auto;
+    padding-left:30px;
+    cursor:pointer;
+}
+footer>div>address{
+    width:35%;
+    line-height:240px;
+}

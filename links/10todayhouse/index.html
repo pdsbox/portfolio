@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>오늘의집</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<!--헤더-->
+<header>
+    <nav class="wrap">
+        <div id="util" class="flex">
+            <h1 id="logo"><a href="index.html">logo</a></h1>
+            <ul class="flex">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">검색</a></li>
+                <li><a href="#">장바구니</a></li>
+            </ul>
+        </div>
+        <div id="gnb">
+            <ul class="flex">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">STORY</a></li>
+                <li><a href="#">BRAND</a></li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">Q & A</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!--컨텐츠-->
+<section id="visual" class="wrap">
+    <a href="#"><img src="./images/main_slider.jpg" alt="main_slider"/></a>
+</section>
+<section id="interior" class="wrap">
+    <div id="bg_img"></div>
+    <div id="int_pos">
+        <hr/>
+        <div class="infotext">
+            <h2>누구나 할 수 있는 손쉬운 인테리어</h2>
+            <p>"오늘의 집"은 우리 집과 비슷한 평수별, 구조별 집을<br>
+                20만개의 사진 리뷰들과 함께<br>
+                따뜻하고 아늑한 집을 인테리어 할 수 있도록<br>
+                <span class="hl_color">초보들을 위한 단계별 가이드로 셀프 인테리어</span>를 도와 드립니다.
+            </p>
+        </div>
+        <div class="circleimg flex">
+            <a href="#"><img src="./images/brand_circle_01.png" alt="circle1"/></a>
+            <a href="#"><img src="./images/brand_circle_02.png" alt="circle1"/></a>
+        </div>
+        
+    </div>
+</section>
+<section id="pop_items" class="wrap flex">
+    <div>
+        <h2>POPULAR<br>
+            ITEMS
+        </h2>
+        <p>"오늘의 집"에서 오늘의 인기 제품을<br>
+            다양한 카테고리별로 만나보세요
+        </p>
+        <button type="button">more</button>
+    </div>
+    <div>
+        <ul class="flex">
+            <li><a href="#"><img src="./images/pop_1.png" alt="pop_1"/></a></li>
+            <li><a href="#"><img src="./images/pop_2.png" alt="pop_2"/></a></li>
+            <li><a href="#"><img src="./images/pop_3.png" alt="pop_3"/></a></li>
+        </ul>
+    </div>
+</section>
+
+<section id="today_story" class="wrap">
+    <h2>TODAY STORY</h2>
+    <h3>오늘의 집을 이용하는 다양한 사용자</h3>
+    <div class="story_relative">
+        <div class="story">
+            <div>
+                <h3>첫 셀프인테리어 도전 성공기</h3>
+                <p>처음하는 셀프 인테리어지만 "오늘의 집"을 이용하여<br>
+                다양한 정보를 얻으며 여기저기 꾸미기 시작하니까<br>
+                셀프 인테리어의 재미를 느끼며, 예쁘게 꾸밀 수 있어서 좋았습니다.
+                </p>
+            </div>
+        </div>
+        <div class="story">
+            <div>
+                <h3>20만원으로 실현한 로망</h3>
+                <p>"오늘의 집"을 통해 이것 저것 검색하면서 계획을 세웠습니다.<br>
+                아기자기한 소품과 따뜻한 무드등 전구등을 이용하여<br>
+                포근한 분위기의 인테리어가 완성되어 올 겨울 잘 보낼 수 있을 것 같아요.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sns" class="wrap">
+    <h2>INSTAGRAM</h2>
+    <h3>follow us on instagram @todayhouse to get more daily interior inspiration</h3>
+    <div class="flex">
+        <figure>
+            <figcaption><div>more</div></figcaption>
+            <img src="./images/in1.png" alt="in1"/>
+        </figure>
+        <figure>
+            <figcaption><div>more</div></figcaption>
+            <img src="./images/in2.png" alt="in2"/>
+        </figure>
+        <figure>
+            <figcaption><div>more</div></figcaption>
+            <img src="./images/in3.png" alt="in3"/>
+        </figure>
+        <figure>
+            <figcaption><div>more</div></figcaption>
+            <img src="./images/in4.png" alt="in4"/>
+        </figure>
+        <figure>
+            <figcaption><div>more</div></figcaption>
+            <img src="./images/in5.png" alt="in5"/>
+        </figure>
+    </div>
+</section>
+
+<!--푸터-->
+<footer>
+    <ul class="flex">
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">채용정보</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">고객센터</a></li>
+    </ul>
+    <address>
+        상호명:오늘의집 이메일:todayhouse@todayhouse.net 대표이사:전우치 사업자등록번호:123-45-6789<br>
+        통신판매업신고번호:제2019-서우서초-7888호 주소:서울특별시 서초구 강남대로 373 길동빌딩 7층<br>
+        NICEPAY 안전거래 서비스:고객님의 안전거래를 위해 현금 결제시, 저희 사이트에서 가입한 구매안전 서비스를 이용할 수 있습니다.<br>
+        Copyrightⓒ2020 by todayhouse Inc All Rights Reserved
+    </address>
+    <ul class="flex">
+        <li><a href="#"><img src="./images/apple-logo.png" alt="apple-logo"/></a></li>
+        <li><a href="#"><img src="./images/google-play-logo.png" alt="google-play-logo"/></a></li>
+        <li><a href="#"><img src="./images/facebook-logo.png" alt="facebook-logo"/></a></li>
+        <li><a href="#"><img src="./images/instagram-logo.png" alt="instagram-logo"/></a></li>
+        <li><a href="#"><img src="./images/blogger-logo.png" alt="blogger-logo"/></a></li>
+    </ul>
+</footer>
+</body>
+</html>

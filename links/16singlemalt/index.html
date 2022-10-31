@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>싱글몰트</title>
+    <link href="./css/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!--헤더-->
+    <header>
+        <nav>
+            <div id="util">
+                <ul class="flex wrap">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li id="searchicon"><a href="#"><img src="./images/search.png" alt="searchicon"></a></li>
+                </ul>
+                <div id="searchbar">
+                    <h3 class="wrap"><a href="#"><img id="searchclose" src="./images/close.png" alt=""></a></h3>
+                    <div class="wrap">
+                        <input type="text" placeholder="  검색어를 입력하세요."><img src="./images/search.png">
+                    </div>
+                </div>
+            </div>
+            <div id="gnb" class="flex wrap">
+                <ul class="flex">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">COCKTAILS</a></li>
+                    <li><a href="sub.html">KNOWLEDGE</a>
+                        <ul class="sub_gnb flex">
+                            <li><a href="sub.html">SINGLE MALT</a></li>
+                            <li><a href="#">HISTORY</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">SHOP</a>
+                        <ul class="sub_gnb flex">
+                            <li><a href="#">WHISKY</a></li>
+                            <li><a href="#">GLASSES</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">PROMOTION</a>
+                        <ul class="sub_gnb flex">
+                            <li><a href="#">EXPERT BLOG</a></li>
+                            <li><a href="#">MALT MASTER</a></li>
+                            <li><a href="#">RECENT NEWS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h1 id="logo"><a href="index.html">logo<img src="./images/logo.png" alt="logoimg"></a></h1>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+    </header>
+
+    <!--컨텐츠-->
+    <section id="visual">
+        <h2>슬라이드배너영역</h2>
+        <div id="img_slide">
+            <ul>
+                <li class="vbnr1"><a href="#"><img src="./images/visual_bn01.jpg" alt="vbn1"></a></li>
+                <li class="vbnr2"><a href="#"><img src="./images/visual_bn02.jpg" alt="vbn1"></a></li>
+                <li class="vbnr3"><a href="#"><img src="./images/visual_bn03.jpg" alt="vbn1"></a></li>
+            </ul>
+            <div class="wrap">
+                <div id="before_btn">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="after_btn">
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="carousel_btn" class="flex">
+                    <span class="crs_btn_selected"></span>
+                    <span class="span"></span>
+                    <span class="span"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="img_bnr">
+        <h2>프리미엄영역</h2>
+        <div class="wrap flex">
+            <figure>
+                <img src="./images/premium_bn01.jpg" alt="premium_bn01">
+                <figcaption>
+                    Glenfiddich 50Y 70CL
+                    £ 24,000.00
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./images/premium_bn02.jpg" alt="premium_bn02">
+                <figcaption>
+                    THE MACALLAN RUBY 70CL
+                    £ 225.00
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./images/premium_bn03.jpg" alt="premium_bn03">
+                <figcaption>
+                    Glenfiddich 50Y 70CL
+                    £ 24,000.00
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./images/premium_bn04.jpg" alt="premium_bn04">
+                <figcaption>
+                    GLENMORANGIE SIGNET
+                    £ 153.58
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="products" class="wrap">
+        <h2>제품영역</h2>
+        <div class="flex">
+            <figure>
+                <figcaption>MACALLAN</figcaption>
+                <img src="./images/macallan.jpg" alt="macallan">
+            </figure>
+            <ul class="flex">
+                <li>
+                    <a href="#"><img src="./images/product_01.jpg" alt="product_01"></a>
+                    <h3><a href="#"></a>THE MACALLAN RUBY 70CL</h3>
+                    <h4><a href="#"></a>£ 225.00</h4>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/product_01.jpg" alt="product_01"></a>
+                    <h3><a href="#"></a>THE MACALLAN RUBY 70CL</h3>
+                    <h4><a href="#"></a>£ 225.00</h4>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/product_01.jpg" alt="product_01"></a>
+                    <h3><a href="#"></a>THE MACALLAN RUBY 70CL</h3>
+                    <h4><a href="#"></a>£ 225.00</h4>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/product_01.jpg" alt="product_01"></a>
+                    <h3><a href="#"></a>THE MACALLAN RUBY 70CL</h3>
+                    <h4><a href="#"></a>£ 225.00</h4>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/product_01.jpg" alt="product_01"></a>
+                    <h3><a href="#"></a>THE MACALLAN RUBY 70CL</h3>
+                    <h4><a href="#"></a>£ 225.00</h4>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/product_01.jpg" alt="product_01"></a>
+                    <h3><a href="#"></a>THE MACALLAN RUBY 70CL</h3>
+                    <h4><a href="#"></a>£ 225.00</h4>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex">
+            <figure>
+                <figcaption>GLENMORANGIE</figcaption>
+                <img src="./images/glenmorangie.jpg" alt="glenmorangie">
+            </figure>
+            <ul class="flex">
+                <li>
+                    <a href="#"><img src="./images/product_02.jpg" alt="product_01"></a>
+                    <h3><a href="#"></a>GLENMORANGIE SIGNET</h3>
+                    <h4><a href="#"></a>£ 153.58</h4>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/product_02.jpg" alt="product_01"></a>
+                    <h3><a href="#"></a>GLENMORANGIE SIGNET</h3>
+                    <h4><a href="#"></a>£ 153.58</h4>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/product_02.jpg" alt="product_01"></a>
+                    <h3><a href="#"></a>GLENMORANGIE SIGNET</h3>
+                    <h4><a href="#"></a>£ 153.58</h4>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/product_02.jpg" alt="product_01"></a>
+                    <h3><a href="#"></a>GLENMORANGIE SIGNET</h3>
+                    <h4><a href="#"></a>£ 153.58</h4>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/product_02.jpg" alt="product_01"></a>
+                    <h3><a href="#"></a>GLENMORANGIE SIGNET</h3>
+                    <h4><a href="#"></a>£ 153.58</h4>
+                </li>
+                <li>
+                    <a href="#"><img src="./images/product_02.jpg" alt="product_01"></a>
+                    <h3><a href="#"></a>GLENMORANGIE SIGNET</h3>
+                    <h4><a href="#"></a>£ 153.58</h4>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="dotted" class="wrap"></section>
+
+    <footer>
+        <div class="wrap flex">
+            <ul>
+                <li><a href="#">COMPANY</a></li>
+                <li><a href="#">THE STORY</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">PRIVACY&COOKIE POLICY</a></li>
+                <li><a href="#">TERMS&CONDITIONS</a></li>
+                <li><a href="#">SHOPPING</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">FOLLOW US</a></li>
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">twitter</a></li>
+                <li><a href="#">instagram</a></li>
+                <li><a href="#">youtube</a></li>
+            </ul>
+            <address>Copyrightⓒ 2020 SMW. all right reserved.</address>
+        </div>
+    </footer>
+
+<script type="text/javascript" src="./js/main.js"></script>
+    
+
+</body>
+</html>

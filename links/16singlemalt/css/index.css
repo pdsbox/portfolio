@@ -1,0 +1,204 @@
+@charset "utf-8";
+@import url('./common.css');
+
+
+/*슬라이드*/
+#visual{
+    width:100%;
+    height:570px;
+    margin-bottom:40px;
+}
+#img_slide{
+    width:1280px;
+    margin:0 auto;
+    height:570px;
+    position:relative;
+    text-align:center;
+    overflow:hidden;
+    z-index:98;
+}
+#img_slide>ul>li>a{
+    display:block;
+    text-align:center;
+    width:1280px;
+    height:570px;
+    position:relative;
+    overflow:hidden;
+}
+#img_slide>ul>li>a>img{
+    display:block;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
+#img_slide>ul>li{
+    top:0;
+    position:absolute;
+}
+.vbnr1{
+    left:0;
+}
+.vbnr2{
+    left:-100%;
+}
+.vbnr3{
+    left:100%;
+}
+#img_slide>.wrap{
+    height:100%;
+    position:relative;
+}
+#img_slide>.wrap>div{
+    position:absolute;
+}
+#before_btn{
+    top:50%;
+    left:0;
+    transform:translateY(-50%);
+    cursor:pointer;
+    height:40px;
+    width:30px;
+}
+#before_btn>div{
+    height:3px;
+    width:30px;
+    background:#918b8d;
+    border-radius:20px;
+    margin:13px 0;
+}
+#before_btn>div:first-child{
+    transform:rotate(-34deg);
+}
+#before_btn>div:last-child{
+    transform:rotate(34deg);
+}
+
+#after_btn{
+    top:50%;
+    right:0;
+    transform:translateY(-50%);
+    cursor:pointer;
+    height:40px;
+    width:30px;
+}
+#after_btn>div{
+    height:3px;
+    width:30px;
+    background:#918b8d;
+    border-radius:20px;
+    margin:13px 0;
+}
+#after_btn>div:first-child{
+    transform:rotate(34deg);
+}
+#after_btn>div:last-child{
+    transform:rotate(-34deg);
+}
+#carousel_btn{
+    position:absolute;
+    left:50%;
+    bottom:2%;
+    transform:translateX(-50%);
+}
+#carousel_btn>span{
+    display:block;
+    width:60px;
+    height:7px;
+    margin:0 20px;
+    cursor:pointer;
+    border-radius:15px;
+    background:#d0d0d0;
+}
+#carousel_btn>.span{
+    background:#d0d0d0;
+}
+#carousel_btn>.crs_btn_selected{
+    background:#918b8d;
+}
+
+
+
+/*프리미엄*/
+#img_bnr{
+    margin-bottom:100px;
+}
+#img_bnr>.flex>figure,
+#img_bnr>.flex>figure>figcaption,
+#img_bnr>.flex>figure>img{
+    width:305px;
+    height:305px;
+}
+#img_bnr>.flex>figure{
+    overflow:hidden;
+    position:relative;
+}
+#img_bnr>.flex>figure>figcaption{
+    text-align: center;
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+    font-weight:500;
+    padding:40% 25%;
+    box-sizing:border-box;
+    position:absolute;
+    top:100%;
+    left:50%;
+    transform:translateX(-50%);
+    transition:all 0.2s;
+    cursor:pointer;
+}
+#img_bnr>.flex>figure:hover>figcaption{
+    top:0;
+}
+
+
+
+
+/*제품*/
+#products>div{
+    width:100%;
+    margin:100px 0;
+    align-items: flex-start;
+}
+#products>div>figure{
+    width:20%;
+}
+#products>div>figure>figcaption{
+    font-size:1.5rem;
+    font-weight:500;
+    letter-spacing: 3px;
+    margin-bottom:10px;
+    color:#918b8d;
+}
+#products>div.flex>ul{
+    width:80%;
+    justify-content: right;
+}
+#products>div.flex>ul>li{
+    width:280px;
+    margin-left:5%;
+    margin-bottom:5%;
+    text-align:center;
+    border-bottom:1px solid #d0d0d0;
+}
+#products>div.flex>ul>li>a,
+#products>div.flex>ul>li>a>img{
+    display:block;
+    width:280px;
+    height:280px;
+}
+#products>div.flex>ul>li>a{
+    border:1px solid #d0d0d0;
+    box-sizing: border-box;
+}
+
+#products>div.flex>ul>li>h3,
+#products>div.flex>ul>li>h4{
+    margin:20px 0;
+}
+#products>div.flex>ul>li>h3{
+    letter-spacing: 1px;
+}
+#products>div.flex>ul>li>h4{
+    font-weight:500;
+    font-size:1.2rem;
+}
