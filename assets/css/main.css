@@ -91,6 +91,25 @@ input, select, textarea {
 .loc_btn:hover{
 	color:darkgrey;
 }
+.flex{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-between;
+}
+.flex>li{
+	width:15%;
+	margin:0 5%;
+	text-align:center;
+}
+.flex>li>img{
+	display:block;
+	width:100%;
+}
+.flex,
+.flex>li{
+	list-style:none;
+}
+
 
 /* Basic */
 
