@@ -78,11 +78,22 @@ input, select, textarea {
 }
 .popon{
 	border-bottom:0;
-	color:#787878;
-	margin:0 30px;
+	color:#fff !important;
+	margin:10px 20px 0;
 	font-weight:bold;
-	font-size:1.3rem;
-	letter-spacing: 2px;
+	font-size:0.9rem;
+	letter-spacing: 1px;
+	padding:10px 24px;
+	border:2px solid #49bf9d;
+	border-radius:30px;
+	border-bottom-color:none !important;
+	transition:all .2s;
+	background-color:#49bf9d;
+}
+.popon:hover{
+	background:darkolivegreen;
+	border:2px solid darkolivegreen;
+	color:#fff !important;
 }
 
 /*로케이션버튼*/
@@ -2871,13 +2882,15 @@ input, select, textarea {
 			bottom: 0;
 			cursor: default;
 			font-size: 0.9em;
-			height: 3em;
+			height: 4em;
 			left: 0;
 			line-height: 2.8em;
 			position: absolute;
 			text-align: center;
 			width: 100%;
 			z-index: 1;
+			padding:10px 0;
+			box-sizing: border-box;
 		}
 
 		.poptrox-popup .nav-next,
