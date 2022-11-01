@@ -80,6 +80,9 @@ input, select, textarea {
 	border-bottom:0;
 	color:#787878;
 	margin:0 30px;
+	font-weight:bold;
+	font-size:1.3rem;
+	letter-spacing: 2px;
 }
 
 /*로케이션버튼*/
