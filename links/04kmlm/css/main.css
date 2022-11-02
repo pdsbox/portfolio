@@ -177,10 +177,15 @@ h6{
 	display:block;
 	width:100%;
 	height:85%;
+	overflow:hidden;
+	position:relative;
 }
 #today_writter>figure>a>img{
-	width:100%;
+	position:absolute;
+	left:50%;
+	transform:translateX(-50%);
 	height:100%;
+	text-align:center;
 }
 #today_writter>figure figcaption{
 	text-align:center;
