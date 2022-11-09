@@ -82,9 +82,9 @@ input, select, textarea {
 	margin:10px 20px 0;
 	font-weight:bold;
 	font-size:0.9rem;
-	padding:10px 24px;
+	padding:8px 24px;
 	border:2px solid #49bf9d;
-	border-radius:30px;
+	border-radius:40px;
 	border-bottom-color:none !important;
 	transition:all .2s;
 	background-color:#49bf9d;
