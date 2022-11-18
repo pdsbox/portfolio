@@ -79,10 +79,10 @@ input, select, textarea {
 .popon{
 	border-bottom:0;
 	color:#fff !important;
-	margin:10px 20px 0;
+	margin:10px 5px 0;
 	font-weight:bold;
 	font-size:0.9rem;
-	padding:8px 24px;
+	padding:6px 20px;
 	border:2px solid #49bf9d;
 	border-radius:40px;
 	border-bottom-color:none !important;

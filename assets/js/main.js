@@ -117,7 +117,7 @@
 })(jQuery);
 
 
-//To link logic PC/MOBILE screen
+//Go link logic PC/MOBILE screen
 $(document).ready(function(){
 	$(".loc_btn").click(function(){
 		let loc = $(this).index(".loc_btn")+1;
@@ -133,3 +133,4 @@ $(document).ready(function(){
 		}
 	});
 });
+
