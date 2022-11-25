@@ -159,7 +159,7 @@ nav a:active{
     height:550px;
     text-align:left;
     margin-top:20px;
-    background:url('../img/portrait.png') no-repeat center top/65%;
+    background:url('../img/portrait.png') no-repeat center top/380px 300px;
 }
 #snsArea .desc h3{
     font-size:1.3rem;
