@@ -122,6 +122,11 @@ input, select, textarea {
 .flex>li{
 	list-style:none;
 }
+.sub_desc{
+	font-size:0.9rem;
+	line-height:1.5;
+	padding-left:15px;
+}
 
 
 /* Basic */
@@ -2621,7 +2626,7 @@ input, select, textarea {
 		.work-item p {
 			font-size: 0.8em;
 			line-height: 1.5em;
-			margin: 0;
+			margin: 7px 0;
 		}
 
 /* Header */
