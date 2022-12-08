@@ -144,7 +144,6 @@ nav a:active{
     overflow:hidden; 
     opacity:0;
     transition:all .7s;
-
 }
 
 
@@ -442,4 +441,32 @@ address>div>ul:last-of-type>li{
 }
 address>div>ul:last-of-type>li>a>img{
     height:40px;
+}
+
+
+
+@media all and (max-width:1024px){
+    #bestProduct>ul>li>a{
+        position:absolute;
+        display:block;
+        width:70%;
+        height:100%;
+        bottom:-20%; padding:20px;
+        color:#fff;
+        transition:all .3s;
+        background-color:rgba(0,0,0,0.3);
+    }
+    #bestProduct>ul>li>a h3{font-size:1.4rem; margin:15px 0; font-weight:bold;}
+    #bestProduct>ul>li>a p{
+        width:100%;
+        font-size:0.9rem; 
+        line-height:1.7; 
+        max-height:130px; 
+        overflow:hidden; 
+        opacity:1;
+        transition:all .7s;
+    }
+    .pickPrd>a .caption{
+        bottom:0;
+    }
 }
